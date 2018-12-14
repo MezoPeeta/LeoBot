@@ -1,5 +1,7 @@
 import discord
 import asyncio
+
+
 client = discord.Client()
 
 @client.event
@@ -21,7 +23,5 @@ async def on_message(message):
     elif message.content.startswith('!Bday'):
         await client.send_message(message.channel, "HAPPYBIRTHDAAAY!, Wish you the best day ever. Don't Forget to ENJOOOOOOOOOOOOOY :blush: :gift: :gift_heart:")
         await client.send_file(message.channel, 'E:\WorkSpace\Python\Leo\LeoBot\Gif\Bday.gif')
-
-
     
 client.run('NTIyODA5MjAzNTM0ODU2MjIy.DvQYUA.lZ5IPIyBQGZBVcqtzaXTXgnuOu0')

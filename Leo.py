@@ -23,6 +23,7 @@ async def on_message(message):
     elif message.content.startswith('$bday'):
         await client.send_message(message.channel, "HAPPYBIRTHDAAAY!, Wish you the best day ever. Don't Forget to ENJOOOOOOOOOOOOOY :blush: :gift: :gift_heart:")
         await client.send_file(message.channel, 'E:\WorkSpace\Python\Leo\LeoBot\Gif\Bday.gif')
+        await client.add_reaction("bday", "💝")
 
-
+    
 client.run('NTIyODA5MjAzNTM0ODU2MjIy.DvQYUA.lZ5IPIyBQGZBVcqtzaXTXgnuOu0')

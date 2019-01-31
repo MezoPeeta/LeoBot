@@ -24,8 +24,8 @@ async def on_ready():
 @bot.command()
 async def bday(ctx):
     await ctx.send(r"Happy Bday!,Wish you the best day ever. Don't Forget to ENJOY:gift: :gift_heart:",
-                   file=discord.File(r'Bday\Images\Bday.gif',
-                                 r'Bday\Images\hday.jpg'))
+                   file=discord.File(r'LeoBot\Bday\Images\Bday.gif',
+                                 r'LeoBot\Bday\Images\hday.jpg'))
     #   Updated path here. This would make it run remotely too.
     await ctx.message.add_reaction("💝")
 

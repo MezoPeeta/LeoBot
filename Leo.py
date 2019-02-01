@@ -24,8 +24,8 @@ async def on_ready():
 @bot.command()
 async def bday(ctx):
     await ctx.send(r"Happy Bday!,Wish you the best day ever. Don't Forget to ENJOY:gift: :gift_heart:",
-                   file=discord.File(r'LeoBot\Bday\Images\Bday.gif',
-                                 r'LeoBot\Bday\Images\hday.jpg'))
+                   file=discord.File(r'E:\WorkSpace\Python\Leo\LeoBot\Bday\Images\Bday.gif',
+                       r'E:\WorkSpace\Python\Leo\LeoBot\Bday\Images\hday.jpg'))
     #   Updated path here. This would make it run remotely too.
     await ctx.message.add_reaction("💝")
 
@@ -40,19 +40,8 @@ async def help(ctx):
     embed.set_author(name="Help")
     embed.add_field(name="bday", value="Birthday",inline=False)
 
-    await author.send(author, embed=embed)
+    await author.send(embed=embed)
 
-@bot.command()
-async def clean(ctx):
-    textchannel = discord.TextChannel
-    channel = textchannel.purge
-    messages=[]
-    
-    async for message in channel.history(channel):
-        messages.append(message)
-
-    await discord.delete_messages(messages)
-    await ctx.say("Messages Deleted")
 
 
 
